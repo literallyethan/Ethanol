@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    std::string filename(argv[1]);
+    string filename(argv[1]);
     if (filename.length() < 5) {
         cout << "Invalid filename." << endl;
         return 1;
