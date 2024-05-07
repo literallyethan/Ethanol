@@ -22,12 +22,21 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    if ((filename.substr(filename.length() - 4, 4) != ".etl")) {
+    string extension = filename.substr(filename.length() - 4, 4);
+    if (extension != ".etl") {
         cout << "Not an .etl file." << endl;
         return 1;
     }
 
+    // once you know the given file should work,
+    // call the lexer to tokenize the file contents.
 
+    // preprocessor();
+    // lexer();
+    // parser();
+
+    // using nasm and
+    // gnu linker for last steps
 
     return 0;
 }
