@@ -11,12 +11,9 @@ private:
     std::ofstream outstream;
 
 public:
-    Lexer(
-        const std::string& filepath, 
-        const std::ifstream& ifstream, 
-        const std::ofstream& ofstream) {}
+    Lexer(const std::string& filepath);
 
-    ~Lexer() {}
+    ~Lexer();
 };
 
 #endif

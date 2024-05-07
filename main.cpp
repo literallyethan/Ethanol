@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <fstream>
 
 void usage() {
     using namespace std;
