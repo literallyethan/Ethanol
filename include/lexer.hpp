@@ -5,9 +5,16 @@
 #include <iostream>
 
 class Lexer {
+private:
+    std::string filename;
+    std::ifstream instream;
+    std::ofstream outstream;
 
 public:
-    Lexer(std::string filepath) {}
+    Lexer(
+        const std::string& filepath, 
+        const std::ifstream& ifstream, 
+        const std::ofstream& ofstream) {}
 
     ~Lexer() {}
 };
