@@ -2,7 +2,6 @@
 #define LEXER_H
 #include <string>
 #include <fstream>
-#include <iostream>
 
 class Lexer {
 private:
@@ -14,6 +13,8 @@ public:
     Lexer(const std::string& filepath);
 
     ~Lexer();
+
+    void print_file();
 };
 
 #endif

@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "include/lexer.hpp"
 
 void usage() {
     using namespace std;
@@ -27,6 +28,8 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
+    Lexer lexer(filename);
+    lexer.print_file();
     // once you know the given file should work,
     // call the lexer to tokenize the file contents.
 
