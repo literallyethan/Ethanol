@@ -1,0 +1,22 @@
+mod Module {
+    type Info {
+        int x;
+        int y;
+        int z;
+    }
+
+    Module(int x, y) {
+        Info.x = x;
+        Info.y = y;
+    }
+
+    ~Module() {}
+
+    func int get_x () {
+        return x;
+    }
+
+    proc add () {
+        z = x + y;
+    }
+}
