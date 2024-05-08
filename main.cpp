@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <vector>
+
 #include "include/lexer.hpp"
 
 void usage() {
@@ -30,8 +32,11 @@ int main(int argc, char* argv[]) {
 
     Lexer lexer(filename);
     lexer.print_file();
-    // once you know the given file should work,
-    // call the lexer to tokenize the file contents.
+
+    // TODO:
+    // create a symbol-table for lexing
+
+    // token: <token-name, attribute-value>
 
     // preprocessor();
     // lexer();
