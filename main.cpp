@@ -33,10 +33,22 @@ int main(int argc, char* argv[]) {
     Lexer lexer(filename);
     lexer.print_file();
 
+    // try reducing the number of classes by cutting the SymbolTable class
+
+    // as tokens are found in the source file, they are pushed into here.
+    // read more chapter 2 of dragon book before moving too much farther
+    std::unordered_map<std::string, Token_Info> symbol_table;
+
+
+
+
     // TODO:
     // create a symbol-table for lexing
 
     // token: <token-name, attribute-value>
+    //        token name being type of token, value being place in table
+
+
 
     // preprocessor();
     // lexer();
